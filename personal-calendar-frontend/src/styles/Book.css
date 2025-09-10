@@ -1,0 +1,185 @@
+/* Book.css */
+
+.book-container {
+  max-width: 90%;
+  margin: 40px auto;
+  padding: 32px 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 6px 32px rgba(60, 60, 90, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  direction: rtl;
+}
+
+.book-container h1 {
+  margin-bottom: 24px;
+  color: #3a3a5a;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.book-container h2 {
+  font-size: 1.3rem;
+  margin: 0 0 16px 0;
+  color: #3a3a5a;
+  font-weight: 600;
+}
+
+.loading {
+  text-align: center;
+  padding: 20px;
+  color: #6b7280;
+  font-size: 1.1rem;
+}
+
+.no-slots {
+  background: #f6f8fd;
+  border-radius: 10px;
+  padding: 24px;
+  text-align: center;
+  color: #6b7280;
+  margin-top: 16px;
+  box-shadow: 0 1px 4px rgba(34, 72, 184, 0.04);
+}
+
+.calendar-view {
+  width: 100%;
+}
+
+.days-columns {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 16px;
+  margin-top: 24px;
+  width: 100%;
+}
+
+.day-column {
+  min-width: 240px;
+  flex: 1;
+  background: #f9faff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(34, 72, 184, 0.05);
+}
+
+.date-header {
+  color: #3a3a5a;
+  font-size: 1.2rem;
+  margin: 0 0 16px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e5e7eb;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.date-number {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-top: 4px;
+  font-weight: normal;
+}
+
+.time-slots {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.slot-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f6f8fd;
+  margin-bottom: 12px;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #3a3a5a;
+  box-shadow: 0 1px 4px rgba(34, 72, 184, 0.04);
+  transition: all 0.2s;
+}
+
+.slot-item:hover {
+  background: #f2f7ff;
+  box-shadow: 0 2px 8px rgba(34, 72, 184, 0.08);
+}
+
+.slot-time {
+  font-weight: 500;
+}
+
+.book-button {
+  background: linear-gradient(90deg, #478aff 0%, #61e5ff 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.book-button:hover {
+  background: linear-gradient(90deg, #397cdf 0%, #50c3e6 100%);
+}
+
+.book-button:disabled {
+  background: linear-gradient(90deg, #a0c0e8 0%, #b0e0f0 100%);
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .book-container {
+    margin: 20px 10px;
+    padding: 20px 15px;
+    max-width: calc(100% - 20px);
+  }
+
+  .book-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+
+  .book-container h2 {
+    font-size: 1.2rem;
+  }
+  
+  .days-columns {
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .day-column {
+    min-width: auto;
+    width: 100%;
+    padding: 12px;
+  }
+  
+  .date-header {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .slot-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px;
+  }
+
+  .book-button {
+    width: 100%;
+    padding: 10px;
+  }
+}
