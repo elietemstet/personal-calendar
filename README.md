@@ -2,7 +2,8 @@
 
 ## Comment exécuter le projet
 
-1. Remplacez le contenu du fichier serviceAccountKey.json par celui du fichier envoyé sur WhatsApp.
+1. Remplacez le contenu du fichier serviceAccountKey.json par le contenu du fichier envoyé 
+    avec le lien GitHub.
 2. Exécutez les commandes suivantes dans le terminal :
     cd personal-calendar-backend
     npm install
